@@ -1,0 +1,22 @@
+package scripts;
+
+import org.testng.annotations.Test;
+
+import Pages.LoginPage;
+import Pages.WelcomePage;
+import commonClasses.SuperTestScript;
+
+public class LoginScript extends SuperTestScript
+{
+@Test
+public void testLoginScript() throws Exception
+{
+	WelcomePage wp = new WelcomePage();
+	LoginPage lp = new LoginPage();
+	
+	wp.clickOnSignInLink();
+	lp.enterUsername();
+	lp.enterPassword();
+    lp.clickOnLogin();
+}
+}
