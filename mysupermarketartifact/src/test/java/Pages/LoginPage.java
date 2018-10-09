@@ -1,7 +1,17 @@
 package Pages;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import commonClasses.SuperTestScript;
 
 public class LoginPage 
 {
@@ -10,24 +20,46 @@ public class LoginPage
 	
 	@FindBy(className="PasswordLogin  Input")
 	  private WebElement password;
-	
-	@FindBy(id="SignInButton")
-	  private WebElement loginButton;
-	
-	public void enterUsername()
+		
+	public void enterUsername(String userName)
 	{
-		username.sendKeys("swaroop012389@gmail.com");
+		username.sendKeys(userName);
 	}
 	
-	public void enterPassword()
+//	Wait fluwait = new FluentWait(SuperTestScript.driver)
+//	.withTimeout(20, TimeUnit.SECONDS)
+//	.pollingEvery(20, TimeUnit.SECONDS);
+		
+	public void enterPassword(String passWord)
 	{
-		password.sendKeys("23May1989");
+		password.sendKeys(passWord);
 	}
 	
+	WebDriverWait expwait = new WebDriverWait(SuperTestScript.driver,20);
+	private WebElement loginButton = expwait.until(ExpectedConditions.visibilityOfElementLocated(By.id("SignInButton")));
+	
+//    alertIsPresent()
+//    elementSelectionStateToBe()
+//    elementToBeClickable()
+//    elementToBeSelected()
+//    frameToBeAvaliableAndSwitchToIt()
+//    invisibilityOfTheElementLocated()
+//    invisibilityOfElementWithText()
+//    presenceOfAllElementsLocatedBy()
+//    presenceOfElementLocated()
+//    textToBePresentInElement()
+//    textToBePresentInElementLocated()
+//    textToBePresentInElementValue()
+//    titleIs()
+//    titleContains()
+//    visibilityOf()
+//    visibilityOfAllElements()
+//    visibilityOfAllElementsLocatedBy()
+//    visibilityOfElementLocated()
+    
 	public void clickOnLogin()
 	{
 		loginButton.click();
 	}
-	
 	
 }

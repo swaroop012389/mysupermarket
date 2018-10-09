@@ -8,6 +8,7 @@ import commonClasses.SuperTestScript;
 
 public class LoginScript extends SuperTestScript
 {
+	
 @Test
 public void testLoginScript() throws Exception
 {

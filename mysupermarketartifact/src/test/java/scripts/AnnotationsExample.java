@@ -11,10 +11,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Sample 
+public class AnnotationsExample 
 {
-	private static final String a = null;
-	private static final String b = null;
 
 	@Test(groups = {"Re"},priority=2)
 public void testSample1() 
@@ -92,6 +90,12 @@ System.out.println("Test 5");
 	public void beforeMethod() 
 	{
 	System.out.println("Before starts starts"); 	
+	}
+	
+	@Test(enabled = false)
+	public void ignoreExample() 
+	{
+	System.out.println("Test Case Ignored"); 	
 	}
 	
 	

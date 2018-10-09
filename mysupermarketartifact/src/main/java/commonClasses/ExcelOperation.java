@@ -15,7 +15,7 @@ public class ExcelOperation
 	public static String readData(String sheetName,int rowNum,int cellNum) throws Exception
 	{
 	
-			File f1 = new File("C:\\Users\\hp\\Desktop\\Seleniumpractice\\testData\\Sample.xlsx");
+			File f1 = new File(".src//test//resources//DataExcel//practice.xlsx");
 			FileInputStream fis = new FileInputStream(f1);
 			Workbook w1 = WorkbookFactory.create(fis); 
 			String data = w1.getSheet(sheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
@@ -25,7 +25,7 @@ public class ExcelOperation
 	public static void writeData(String sheetName,int rowNum,int cellNum, String data) throws Exception
 	{
 	
-		File f1 = new File("C:\\Users\\hp\\Desktop\\Seleniumpractice\\testData\\Sample.xlsx");
+		File f1 = new File(".src//test//resources//DataExcel//practice.xlsx");
 		FileInputStream fis = new FileInputStream(f1);
 		Workbook w1 = WorkbookFactory.create(fis); 	
 		w1.getSheet(sheetName).getRow(rowNum).createCell(cellNum).setCellValue(data);
