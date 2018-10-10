@@ -7,9 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
-
-
-
 @Listeners(CustomListener.class)
 abstract public class SuperTestScript 
 {
@@ -21,16 +18,16 @@ abstract public class SuperTestScript
 		
 	for(int i=1;i<=2;i++)
 		{
-	String browser = ExcelOperation.readData("LoginData",1,0);
-    String url = ExcelOperation.readData("LoginData",1,1);
+	String browser = ExcelOperation.readData("data",1,0);
+    String url = ExcelOperation.readData("data",1,1);
 	if(browser.equals("FF"))
     {
-		System.setProperty("webdriver.gecko.driver","./src/test/resources/Webdrivers/geckodriver.exe");		
+		System.setProperty("webdriver.gecko.driver","C://Users//hp//Desktop//New folder//geckodriver.exe");		
 		driver = new FirefoxDriver();	
 		   }
 		else if(browser.equals("Chrome"))
 		   {
-		System.setProperty("webdriver.chrome.driver","./src/test/resources/Webdrivers/chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver","C://Users//hp//Desktop//New folder//chromedriver.exe");	
 		driver = new ChromeDriver();	
 		   }
 		driver.get(url);

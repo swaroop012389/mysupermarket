@@ -4,9 +4,7 @@ package scripts;
 import org.testng.annotations.Test;
 
 import Pages.PoundstretchersMyTopOffersPage;
-import Pages.TescoApplesPage;
-import Pages.TescoMyTopOffersPage;
-import Pages.WelcomePage;
+
 import commonClasses.SuperTestScript;
 
 
