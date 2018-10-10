@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="1" total="6" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="138" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+    <groups>
+      <group name="Re">
+        <method signature="AnnotationsExample.testSample3(int, int)[pri:2, instance:scripts.AnnotationsExample@42d80b78]" name="testSample3" class="scripts.AnnotationsExample"/>
+        <method signature="AnnotationsExample.testSample4()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="testSample4" class="scripts.AnnotationsExample"/>
+        <method signature="AnnotationsExample.testSample5()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="testSample5" class="scripts.AnnotationsExample"/>
+        <method signature="AnnotationsExample.testSample1()[pri:2, instance:scripts.AnnotationsExample@42d80b78]" name="testSample1" class="scripts.AnnotationsExample"/>
+      </group> <!-- Re -->
+      <group name="Reg">
+        <method signature="AnnotationsExample.testSample4()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="testSample4" class="scripts.AnnotationsExample"/>
+        <method signature="AnnotationsExample.testSample2()[pri:1, instance:scripts.AnnotationsExample@42d80b78]" name="testSample2" class="scripts.AnnotationsExample"/>
+        <method signature="AnnotationsExample.testSample5()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="testSample5" class="scripts.AnnotationsExample"/>
+      </group> <!-- Reg -->
+    </groups>
+    <test name="Default test" duration-ms="138" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+      <class name="scripts.AnnotationsExample">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="beforeSuite" is-config="true" duration-ms="28" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSample4()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="testSample4" duration-ms="9" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample4 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSample5()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="testSample5" duration-ms="3" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample5 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testSample3(int, int)[pri:2, instance:scripts.AnnotationsExample@42d80b78]" name="testSample3" duration-ms="0" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'a' is required by @Test on method testSample3 but has not been marked @Optional or defined
+in C:\Users\hp\AppData\Local\Temp\testng-eclipse-547977885\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'a' is required by @Test on method testSample3 but has not been marked @Optional or defined
+in C:\Users\hp\AppData\Local\Temp\testng-eclipse-547977885\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample3 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSample1()[pri:2, instance:scripts.AnnotationsExample@42d80b78]" name="testSample1" duration-ms="3" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="testSample2()[pri:1, instance:scripts.AnnotationsExample@42d80b78]" name="testSample2" duration-ms="0" started-at="2018-10-10T13:38:41Z" depends-on-methods="scripts.AnnotationsExample.testSample3, scripts.AnnotationsExample.testSample4" finished-at="2018-10-10T13:38:41Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AnnotationsExample.testSample2()[pri:1, instance:scripts.AnnotationsExample@42d80b78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AnnotationsExample.testSample2()[pri:1, instance:scripts.AnnotationsExample@42d80b78] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample2 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:scripts.AnnotationsExample@42d80b78]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-10-10T13:38:41Z" finished-at="2018-10-10T13:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- scripts.AnnotationsExample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
