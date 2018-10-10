@@ -1,9 +1,6 @@
 package scripts;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.annotations.Test;
 
 import Pages.PoundstretchersMyTopOffersPage;
@@ -18,8 +15,7 @@ public class BasketCreateScript extends SuperTestScript
  
 	@Test
 	public void testBasketCreateScript()
-	{
-		
+	{		
 		PoundstretchersMyTopOffersPage pmtop = new PoundstretchersMyTopOffersPage();
 		WelcomePage wp = new WelcomePage();
 		TescoMyTopOffersPage tmtop = new TescoMyTopOffersPage();
@@ -30,12 +26,6 @@ public class BasketCreateScript extends SuperTestScript
 		pmtop.selectStoreFromDropdown(1);
 		tmtop.clickOnCategoryFilter();		
 		tmtop.clickOnApplesFilter();
-		tap.clickOnAddToBasket();
-		
-		
-		
-				
-	}
-
-	
+		tap.clickOnAddToBasket();			
+	}	
 }

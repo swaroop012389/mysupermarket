@@ -8,11 +8,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commonClasses.ExcelOperation;
+
 
 public class AnnotationsExample 
 {
@@ -22,7 +21,7 @@ public void testSample1()
 {
  System.out.println("Test 1");	
 }
-	@Test(groups = {"Reg"},priority=1,dependsOnMethods= {"testSample4","testSample3"})
+	@Test(groups = {"Reg"},priority=1)
 public void testSample2() 
 {
 System.out.println("Test 2");	
@@ -101,20 +100,20 @@ System.out.println("Test 5");
 	System.out.println("Test Case Ignored"); 	
 	}
 	
-	@DataProvider(name = "Sample")
-	public void testDataProvider() throws Exception
-	{
-		int i=0;int j=0;
-		Object[][] data = new Object[i][j];
-		for(i=0;i<=3;i++)
-		{
-			for(j=0;j<=3;j++)
-			{		
-		      data[i][j]=ExcelOperation.readData("practice", i, j);
-			}
-		}
-
-	}
+//	@DataProvider(name = "Sample")
+//	public void testDataProvider() throws Exception
+//	{
+//		int i=0;int j=0;
+//		Object[][] data = new Object[i][j];
+//		for(i=0;i<=3;i++)
+//		{
+//			for(j=0;j<=3;j++)
+//			{		
+//		      data[i][j]=ExcelOperation.readData("practice", i, j);
+//			}
+//		}
+//
+//	}
 	
 	
 }
