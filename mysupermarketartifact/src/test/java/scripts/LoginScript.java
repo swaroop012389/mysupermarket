@@ -2,7 +2,8 @@ package scripts;
 
 import org.testng.annotations.Test;
 
-
+import Pages.LoginPage;
+import Pages.WelcomePage;
 import commonClasses.SuperTestScript;
 
 public class LoginScript extends SuperTestScript
