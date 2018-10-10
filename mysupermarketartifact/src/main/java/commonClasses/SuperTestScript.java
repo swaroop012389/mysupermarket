@@ -25,12 +25,12 @@ abstract public class SuperTestScript
     String url = ExcelOperation.readData("LoginData",1,1);
 	if(browser.equals("FF"))
     {
-		//System.setProperty("webdriver.gecko.driver","C:\\Users\\hp\\Desktop\\Seleniumpractice\\drivers\\geckodriver.exe");		
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\hp\\Desktop\\Seleniumpractice\\drivers\\geckodriver.exe");		
 		driver = new FirefoxDriver();	
 		   }
 		else if(browser.equals("Chrome"))
 		   {
-		//System.setProperty("webdriver.chrome.driver","C:\\Users\\hp\\Desktop\\Seleniumpractice\\drivers\\chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\hp\\Desktop\\Seleniumpractice\\drivers\\chromedriver.exe");	
 		driver = new ChromeDriver();	
 		   }
 		driver.get(url);

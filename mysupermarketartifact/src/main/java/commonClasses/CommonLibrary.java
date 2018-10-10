@@ -1,31 +1,26 @@
 package commonClasses;
 import java.io.File;
+import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class CommonLibrary 
 {
-public void takeScreenShot(String methodName)
+public void takeScreenShot(String methodName) throws IOException
 {
 	EventFiringWebDriver efw = new EventFiringWebDriver(SuperTestScript.driver); 
 	File f1 = efw.getScreenshotAs(OutputType.FILE);
 	File f2 = new File(".src//test//resources//FailedTS"+methodName+".png");
-	try 
-	{
-		FileUtils.moveFile(f1,f2);
-	}
-	catch(Exception rv)
-	{
-		
-	}
+	FileHandler.copy(f1, f2);
+
+
 }
 
 public void selectOptionFromDropdownByIndex(WebElement dropdown, int index)

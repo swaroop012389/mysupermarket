@@ -16,8 +16,8 @@ public void testLoginScript() throws Exception
 	LoginPage lp = new LoginPage();
 	
 	wp.clickOnSignInLink();
-	lp.enterUsername();
-	lp.enterPassword();
+	lp.enterUsername("swaroop012389@gmail.com");
+	lp.enterPassword("23May1989");
     lp.clickOnLogin();
 }
 }

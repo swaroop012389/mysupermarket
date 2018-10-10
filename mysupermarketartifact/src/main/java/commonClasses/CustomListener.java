@@ -1,4 +1,6 @@
 package commonClasses;
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -10,7 +12,15 @@ public void onTestFailure(ITestResult result)
 {
 	 String methodName = result.getName();
 	 CommonLibrary cl = new CommonLibrary();
-	 cl.takeScreenShot(methodName);
+	 try 
+	 {
+		cl.takeScreenShot(methodName);
+	 } 
+	 catch (IOException e) 
+	 {
+		
+		e.printStackTrace();
+   	 }
 	
 }
 

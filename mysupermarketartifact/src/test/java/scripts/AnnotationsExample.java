@@ -8,8 +8,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import commonClasses.ExcelOperation;
 
 public class AnnotationsExample 
 {
@@ -96,6 +99,21 @@ System.out.println("Test 5");
 	public void ignoreExample() 
 	{
 	System.out.println("Test Case Ignored"); 	
+	}
+	
+	@DataProvider(name = "Sample")
+	public void testDataProvider() throws Exception
+	{
+		int i=0;int j=0;
+		Object[][] data = new Object[i][j];
+		for(i=0;i<=3;i++)
+		{
+			for(j=0;j<=3;j++)
+			{		
+		      data[i][j]=ExcelOperation.readData("practice", i, j);
+			}
+		}
+
 	}
 	
 	
